@@ -1,0 +1,9 @@
+from microbit import *
+
+
+Hungryness = 0
+while True:
+    if button_a.was_pressed(): Hungryness += 1  
+    display.scroll(Hungryness)
+    if button_b.was_pressed(): Hungryness -= 1 
+    display.scroll(Hungryness)
